@@ -1,0 +1,110 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+ul,ol{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/* header styles */
+header{
+    width: clamp(200px,100%,1200px);
+    /* background-color: rgb(66, 65, 63); */
+    padding: var(--padding);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+}
+.logo>b{
+    color: var(--accent);
+}
+header>input{
+    width: clamp(100px,90%,600px);
+    background: none;
+    padding: var(--padding);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+}
+
+/* hero section */
+.hero{
+    min-height: 50vh;
+    /* background-color: var(--primary-lighter); */
+    display: flex;
+    padding: var(--padding);
+}
+.hero>.welcome{
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+
+    background: url(../../images/bg2.jpg) no-repeat center/cover;
+}
+.hero>.hero-image{
+    flex:1
+}
+
+/* this is for the category section */
+.category-cards{
+    display: grid;
+    /* max-width: 1500px; */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: auto;
+    gap: 16px;
+    padding: var(--padding);
+}
+
+.card{
+    width: 100%;
+    aspect-ratio: 4/5;
+    max-height: 450px;
+    border-radius: 12px;
+    background-color: rgb(68, 63, 57);
+    overflow: hidden;
+    background: url(../../images/gpu.jpg) no-repeat center/cover;
+}
+.card:nth-child(2){
+    background: url(../../images/cpu.jpg) no-repeat center/cover;
+}
+.card:nth-child(3){
+    background: url(../../images/monitor.jpg) no-repeat center/cover;
+}
+.card:nth-child(4){
+    background: url(../../images/headphones.jpg) no-repeat center/cover;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    padding: var(--padding);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 10%,rgba(0, 0, 0, 0.72));
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+    align-items: center;
+}
+.mask >p, .mask >h3{
+    width: clamp(200px,75%,300px);
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+button.shop{
+    width: 80%;
+    padding: var(--padding);
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+}

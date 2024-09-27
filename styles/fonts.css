@@ -1,0 +1,6 @@
+.heading-large{
+    font-size: 1.3rem;
+    padding: var(--padding);
+    padding-top: 24px;
+    font-weight: bold;
+}

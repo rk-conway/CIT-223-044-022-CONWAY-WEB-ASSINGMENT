@@ -1,0 +1,14 @@
+:root{
+    --primary: #292725;
+    --primary-lighter: #302e2c;
+    --secondary: #FDF0D5;
+    --accent: #F7A100;
+    --light: #EEFAFF;
+
+
+    --padding: 8px 12px;
+}
+
+.box-shadow{
+    box-shadow: 0px 0px 20px -12px var(--accent);
+}

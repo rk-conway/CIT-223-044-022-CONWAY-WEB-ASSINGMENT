@@ -1,0 +1,32 @@
+.grow{
+    animation: grow 350ms ease-in forwards;
+}
+
+.fade-in{
+    animation: fade-in 350ms ease-in forwards;
+}
+
+
+
+
+
+
+
+@keyframes grow{
+    from{
+        scale: 0.75;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
