@@ -6,6 +6,8 @@ nav{
     justify-content: space-between;
     background-color: var(--primary-lighter);
     padding: var(--padding);
+    position: sticky;
+    top: 0;
 }
 
 .profile-section{
@@ -38,4 +40,8 @@ nav>ul>a>li{
     padding: var(--padding);
     background-color: var(--primary);
     border-radius: 8px;
+    transition: 250ms all;
+}
+nav>ul>a>li:hover{
+    color: var(--accent);
 }

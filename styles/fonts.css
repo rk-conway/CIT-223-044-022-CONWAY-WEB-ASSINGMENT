@@ -4,3 +4,7 @@
     padding-top: 24px;
     font-weight: bold;
 }
+
+.hero-text{
+    font-size: clamp(16px,8vw,48px);
+}
