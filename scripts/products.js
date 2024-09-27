@@ -1,6 +1,6 @@
 window.onload = ()=>{
-    // alert("welcome to our shop");
-    fillCategories(fillProducts);
+    categoryChecker();
+    // fillCategories(fillProducts);
 }
 
 
@@ -108,10 +108,10 @@ function fillProducts(){
 }
 
 
-function fillterProducts(target = ''){
+function fillterProducts(targetCat = ''){
     const productsContainer = document.querySelector('.products');
     productsContainer.innerHTML = '';
-    console.log(target);
+    console.log(targetCat);
     
     if(productsContainer){
         
@@ -119,7 +119,7 @@ function fillterProducts(target = ''){
         
         for(i=0;i<5;i++){
             allProducts.forEach((prod)=>{
-                if(prod.category === target){
+                if(prod.category === targetCat){
                     filteredProducts += `
                     <div class="prod-card">
                     <div class="prod-image" style="background: url(${prod.imageUrl}) no-repeat center/cover;"></div>
@@ -135,5 +135,41 @@ function fillterProducts(target = ''){
         }
         
         productsContainer.innerHTML = filteredProducts;
+        categoryHighlighter(targetCat);
     }
 }
+
+
+function categoryChecker(){
+    if(localStorage.getItem("setCategory" === "all")){
+        fillCategories(fillProducts);
+        return;
+    }
+    if(localStorage.getItem("setCategory")){
+        fillterProducts(localStorage.getItem("setCategory"));
+        fillCategories(()=>{});
+        categoryHighlighter(localStorage.getItem("setCategory"))
+    }else{
+        fillCategories(fillProducts);
+    }
+}
+
+
+function categoryHighlighter(target = ''){
+    let allCatCards = document.querySelectorAll('.cat-card');
+    if(allCatCards){
+        allCatCards.forEach((card,index)=>{
+            console.log(index,"---",card.textContent);
+            if(String(card.textContent).toLowerCase().includes(target)){
+                card.classList.add('card-selected');
+            }else{
+                card.classList.remove('card-selected');
+            }
+        })
+    }
+}
+
+
+setTimeout(() => {
+    localStorage.removeItem("setCategory");
+}, 100);
