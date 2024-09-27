@@ -41,6 +41,12 @@ main{
 .screen-small{
     display: none;
 }
+a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
 
 @media screen and (max-width: 600px) {
     nav{
