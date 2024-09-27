@@ -6,7 +6,6 @@ ul,ol{
 /* header styles */
 header{
     width: clamp(200px,100%,1200px);
-    /* background-color: rgb(66, 65, 63); */
     padding: var(--padding);
     display: flex;
     gap: 16px;
@@ -23,14 +22,13 @@ header>input{
     width: clamp(100px,90%,600px);
     background: none;
     padding: var(--padding);
-    border: 1px solid var(--accent);
+    border: 2px solid var(--accent);
     border-radius: 8px;
 }
 
 /* hero section */
 .hero{
     min-height: 50vh;
-    /* background-color: var(--primary-lighter); */
     display: flex;
     padding: var(--padding);
 }
@@ -47,10 +45,9 @@ header>input{
 /* this is for the category section */
 .category-cards{
     display: grid;
-    /* max-width: 1500px; */
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(215px,1fr));
     grid-auto-rows: auto;
-    gap: 16px;
+    gap: 16px 24px;
     padding: var(--padding);
 }
 
@@ -87,8 +84,8 @@ header>input{
 .mask >p, .mask >h3{
     width: clamp(200px,75%,300px);
     text-align: center;
-    color: white;
-    font-size: 1.2rem;
+    /* color: white; */
+    font-size: 0.97rem;
 }
 button.shop{
     width: 80%;
