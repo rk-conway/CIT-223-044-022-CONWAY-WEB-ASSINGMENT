@@ -112,7 +112,7 @@ function fillProducts(){
 function fillterProducts(targetCat = ''){
     const productsContainer = document.querySelector('.products');
     productsContainer.innerHTML = '';
-    console.log(targetCat);
+    // console.log(targetCat);
     
     if(productsContainer){
         
@@ -160,7 +160,7 @@ function categoryHighlighter(target = ''){
     let allCatCards = document.querySelectorAll('.cat-card');
     if(allCatCards){
         allCatCards.forEach((card,index)=>{
-            console.log(index,"---",card.textContent);
+            // console.log(index,"---",card.textContent);
             if(String(card.textContent).toLowerCase().includes(target)){
                 card.classList.add('card-selected');
             }else{

@@ -93,7 +93,9 @@ button.shop{
     background-color: var(--accent);
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 button.build-pc{
+    cursor: pointer;
     width: clamp(150px,80%,300px);
 }
