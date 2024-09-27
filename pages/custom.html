@@ -67,22 +67,22 @@
                                     <p class="field-heading">Cooler type</p>
                                     <p>
                                         <input type="radio" name="cooler" id="air">
-                                        <label for="intel">air cooled</label>
+                                        <label for="air">air cooled</label>
                                     </p>
                                     <p>
-                                        <input type="radio" name="cooler" id="amd">
+                                        <input type="radio" name="cooler" id="liquid">
                                         <label for="liquid">liquid AIO</label>
                                     </p>
                                 </div>
                                 <div class="form-field">
                                     <p class="field-heading">GPU brand</p>
                                     <p>
-                                        <input type="radio" name="gpu" id="air">
-                                        <label for="intel">AMD</label>
+                                        <input type="radio" name="gpu" id="AMD">
+                                        <label for="AMD">AMD</label>
                                     </p>
                                     <p>
-                                        <input type="radio" name="gpu" id="amd">
-                                        <label for="liquid">Nvidia</label>
+                                        <input type="radio" name="gpu" id="Nvidia">
+                                        <label for="Nvidia">Nvidia</label>
                                     </p>
                                 </div>
                             </div>
@@ -90,8 +90,8 @@
                             <p class="form-heading">specifics</p>
                             <div class="form-row">
                                 <div class="form-field">
-                                    <label for="gender">cpu</label>
-                                    <select name="cpu-opt" id="">
+                                    <label for="specific-cpu">cpu</label>
+                                    <select name="cpu-opt" id="specific-cpu">
                                         <option value="i3">core i3</option>
                                         <option value="i5">core i5</option>
                                         <option value="i7">core i7</option>
@@ -105,8 +105,8 @@
                                 </div>
                                 
                                 <div class="form-field">
-                                    <label for="gender">gpu</label>
-                                    <select name="cpu-opt" id="">
+                                    <label for="specific-gpu">gpu</label>
+                                    <select name="cpu-opt" id="specific-gpu">
                                         <option value="4060">rtx 4060</option>
                                         <option value="4070">rtx 4070</option>
                                         <option value="4080">rtx 4080</option>
@@ -124,12 +124,12 @@
                             <div class="form-row">
                                 <div class="form-field">
                                     <label for="ram">RAM</label>
-                                    <input type="number" placeholder="(GB)" name="ram" id="">
+                                    <input type="number" placeholder="(GB)" name="" id="ram">
                                 </div>
                                 
                                 <div class="form-field">
                                     <label for="storage">Storage</label>
-                                    <input type="number" placeholder="(GB)" name="storge" id="">
+                                    <input type="number" placeholder="(GB)" name="" id="storage">
                                 </div>
                                 <div class="form-field">
                                     <fieldset>
@@ -140,7 +140,7 @@
                                         </p>
                                         <p>
                                             <input type="checkbox" name="media" id="hdd">
-                                            <label for="ssd">hdd</label>
+                                            <label for="hdd">hdd</label>
                                         </p>
                                     </fieldset>
                                 </div>
@@ -149,7 +149,7 @@
                             <p class="form-heading">description</p>
                             <div class="form-field">
                                 <!-- <label for="bio">bio:</label> -->
-                                <textarea name="bio" placeholder="specify storage brands,RGB,case size..." id=""></textarea>
+                                <textarea name="" placeholder="specify storage brands,RGB,case size..." id="bio"></textarea>
                             </div>
                             
                             <p class="form-heading">miscelleneous</p>
@@ -157,11 +157,11 @@
                                 <div class="form-field">
                                     <fieldset>
                                         <legend>Extras</legend>
-                                        <input type="checkbox" name="rgb" id="gaming">
+                                        <input type="checkbox" name="" id="rgb">
                                         <label for="rgb">RGB (fans,ram)</label> <br/>
-                                        <input type="checkbox" name="cables" id="office">
+                                        <input type="checkbox" name="" id="cables">
                                         <label for="cables">Cables (HDMI,AUX)</label><br/>
-                                        <input type="checkbox" name="mouse" id="content">
+                                        <input type="checkbox" name="" id="mouse">
                                         <label for="mouse">Free wired mouse</label>
                                     </fieldset>
                                 </div>
@@ -183,7 +183,7 @@
                             <div class="form-row">
                                 <div class="form-field">
                                     <label for="date">Required by:</label>
-                                    <input type="date" name="date" id="">
+                                    <input type="date" name="" id="date">
                                 </div>
                             </div>
 
