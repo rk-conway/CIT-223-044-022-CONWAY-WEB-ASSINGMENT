@@ -45,14 +45,14 @@ header>input{
 /* this is for the category section */
 .category-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(215px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     grid-auto-rows: auto;
-    gap: 16px 24px;
+    gap: 16px;
     padding: var(--padding);
 }
 
 .card{
-    width: 100%;
+    width: 90%;
     aspect-ratio: 4/5;
     max-height: 450px;
     border-radius: 12px;
@@ -82,10 +82,10 @@ header>input{
     align-items: center;
 }
 .mask >p, .mask >h3{
-    width: clamp(200px,75%,300px);
+    width: clamp(70px,90%,300px);
     text-align: center;
     /* color: white; */
-    font-size: 0.97rem;
+    font-size: 0.85rem;
 }
 button.shop{
     width: 80%;

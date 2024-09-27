@@ -5,6 +5,24 @@
     font-weight: bold;
 }
 
+.heading-small{
+    font-size: 1.1rem;
+    padding: var(--padding);
+    text-transform: capitalize;
+    color: var(--accent);
+    padding-top: 16px;
+    font-weight: bold;
+}
+
 .hero-text{
     font-size: clamp(16px,8vw,48px);
+}
+
+.page-title{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--accent);
+    background-color: var(--primary-lighter);
+    padding: var(--padding);
+    font-weight: bold;
 }

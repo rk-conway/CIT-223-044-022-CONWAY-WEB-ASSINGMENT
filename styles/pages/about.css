@@ -1,0 +1,6 @@
+.info-text{
+    /* padding: var(--padding); */
+    padding: 0.5rem 1rem 2rem 2rem;
+    max-width: 600px;
+    line-height: 1.1;
+}
