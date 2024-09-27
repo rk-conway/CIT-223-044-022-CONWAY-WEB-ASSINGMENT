@@ -1,9 +1,9 @@
 // other scripts are in scripts folder
 
-
 window.onload = ()=>{
-    // alert("welcome to the RT club");
-    // console.log("letss gooooo")
+    setTimeout(() => {
+        alert("welcome to the RT club \n find a form by cliking 'build your PC'");
+    }, 3000);
 }
 
 
@@ -12,3 +12,4 @@ function setCategory(selected = ''){
     console.log(localStorage.getItem("setcategory"));
     // window.location.href = "./pages/products.html";
 }
+

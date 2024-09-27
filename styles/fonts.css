@@ -25,4 +25,8 @@
     background-color: var(--primary-lighter);
     padding: var(--padding);
     font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

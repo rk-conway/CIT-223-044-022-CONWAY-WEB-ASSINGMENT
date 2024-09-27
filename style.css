@@ -41,6 +41,9 @@ main{
 .screen-small{
     display: none;
 }
+.screen-large{
+    display: block;
+}
 a{
     display: block;
     width: 100%;
@@ -61,5 +64,8 @@ a{
     }
     .screen-small{
         display: block;
+    }
+    .screen-large{
+        display: none;
     }
 }
