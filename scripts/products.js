@@ -104,6 +104,7 @@ function fillProducts(){
             })
         }
         productsContainer.innerHTML+=newProducts;
+        categoryHighlighter('all');
     }
 }
 
