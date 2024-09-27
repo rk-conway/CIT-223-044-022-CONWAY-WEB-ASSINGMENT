@@ -14,10 +14,10 @@ form{
     padding: var(--padding);
 
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-auto-rows: min-content;
     gap: var(--padding);
-
+    
     /* display: flex;
     flex-direction: column;
     gap: 24px; */
@@ -34,7 +34,7 @@ form{
     gap: 5px;
 }
 
-input,select{
+input,select,textarea{
     background: none;
     border: 1px solid var(--light);
     border-radius: 8px;
@@ -44,4 +44,7 @@ input,select{
 option{
     background: var(--primary);
     color: var(--light);
+}
+fieldset{
+    padding: var(--padding);
 }
