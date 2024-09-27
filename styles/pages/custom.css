@@ -1,0 +1,5 @@
+form{
+    width: clamp(300px,95%,1000px);
+    display: flex;
+    flex-direction: column;    
+}

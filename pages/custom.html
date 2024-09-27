@@ -6,7 +6,7 @@
     <title>RONO-TECH</title>
     <!-- css links -->
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../styles/pages/profile.css">
+    <link rel="stylesheet" href="../styles/pages/custom.css">
 </head>
 <body>
     <div class="main-container">
@@ -21,7 +21,7 @@
                 
                 <ul class="nav-links">
                     <a href="../index.html"><li class="link">home</li></a>
-                    <a href="./products.html"><li class="link">basket</li></a>
+                    <a href="./custom.html"><li class="link">my build</li></a>
                     <a href="./products.html"><li class="link">shop</li></a>
                     <a href="./about.html"><li class="link">about</li></a>
                 </ul>
@@ -39,68 +39,160 @@
                     build your PC
                 </header>
                 
-
+                
                 <section>
-                    <div class="heading-small">make a build perfect for your performance needs...div>
-
+                    <p class="heading-small">make a build perfect for your performance needs...</p>
+                    
                     <div class="form-container wrapper">
                         <form action="">
+                            
+                            <p class="form-heading">brand</p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <p class="field-heading">Choose a platform</p>
+                                    <p>
+                                        <input type="radio" name="platform" id="intel">
+                                        <label for="intel">INTEL</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="platform" id="amd">
+                                        <label for="amd">AMD</label>
+                                    </p>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <p class="field-heading">Cooler type</p>
+                                    <p>
+                                        <input type="radio" name="cooler" id="air">
+                                        <label for="intel">air cooled</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="cooler" id="amd">
+                                        <label for="liquid">liquid AIO</label>
+                                    </p>
+                                </div>
+                                <div class="form-field">
+                                    <p class="field-heading">GPU brand</p>
+                                    <p>
+                                        <input type="radio" name="gpu" id="air">
+                                        <label for="intel">AMD</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="gpu" id="amd">
+                                        <label for="liquid">Nvidia</label>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <p class="form-heading">specifics</p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="gender">cpu</label>
+                                    <select name="cpu-opt" id="">
+                                        <option value="i3">core i3</option>
+                                        <option value="i5">core i5</option>
+                                        <option value="i7">core i7</option>
+                                        <option value="i9">core i9</option>
+                                        <option value="r9">ryzen 3</option>
+                                        <option value="r9">ryzen 5</option>
+                                        <option value="r9">ryzen 7</option>
+                                        <option value="r9">ryzen 9</option>
+                                        <option value="" selected hidden>select an option</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label for="gender">gpu</label>
+                                    <select name="cpu-opt" id="">
+                                        <option value="4060">rtx 4060</option>
+                                        <option value="4070">rtx 4070</option>
+                                        <option value="4080">rtx 4080</option>
+                                        <option value="4090">rtx 4090</option>
+                                        <option value="7600">rx 7600</option>
+                                        <option value="7700">rx 7700</option>
+                                        <option value="7800">rx 7800</option>
+                                        <option value="7900">rx 7900</option>
+                                        <option value="" selected hidden>select an option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <p class="form-heading">memory/storage</p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="ram">RAM</label>
+                                    <input type="number" placeholder="(GB)" name="ram" id="">
+                                </div>
+                                
+                                <div class="form-field">
+                                    <label for="storage">Storage</label>
+                                    <input type="number" placeholder="(GB)" name="storge" id="">
+                                </div>
+                                <div class="form-field">
+                                    <fieldset>
+                                        <legend>Storage type</legend>
+                                        <p>
+                                            <input type="checkbox" name="media" id="ssd">
+                                            <label for="ssd">ssd</label>
+                                        </p>
+                                        <p>
+                                            <input type="checkbox" name="media" id="hdd">
+                                            <label for="ssd">hdd</label>
+                                        </p>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            
+                            <p class="form-heading">description</p>
                             <div class="form-field">
-                                <label for="first-name">First name:</label>
-                                <input type="text" id="first-name">
+                                <!-- <label for="bio">bio:</label> -->
+                                <textarea name="bio" placeholder="specify storage brands,RGB,case size..." id=""></textarea>
+                            </div>
+                            
+                            <p class="form-heading">miscelleneous</p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <fieldset>
+                                        <legend>Extras</legend>
+                                        <input type="checkbox" name="rgb" id="gaming">
+                                        <label for="rgb">RGB (fans,ram)</label> <br/>
+                                        <input type="checkbox" name="cables" id="office">
+                                        <label for="cables">Cables (HDMI,AUX)</label><br/>
+                                        <input type="checkbox" name="mouse" id="content">
+                                        <label for="mouse">Free wired mouse</label>
+                                    </fieldset>
+                                </div>
+                                <div class="form-field">
+                                    <fieldset>
+                                        <legend>purpose for buying pc</legend>
+                                        <input type="checkbox" name="purpose" id="gaming">
+                                        <label for="gaming">gaming</label> <br/>
+                                        <input type="checkbox" name="purpose" id="office">
+                                        <label for="office">office work</label><br/>
+                                        <input type="checkbox" name="purpose" id="content">
+                                        <label for="content">content creation</label>
+                                    </fieldset>
+                                </div>
                             </div>
 
-                            <div class="form-field">
-                                <label for="first-name">Last name:</label>
-                                <input type="text" id="first-name">
+
+                            <p class="form-heading">submit</p>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="date">Required by:</label>
+                                    <input type="date" name="date" id="">
+                                </div>
                             </div>
 
-                            <div class="form-field">
-                                <label for="town">Age:</label>
-                                <input type="number" id="age">
-                            </div>
-
-                            <div class="form-field">
-                                <label for="gender">gender</label>
-                                <select name="gender" id="">
-                                    <option value="male">male</option>
-                                    <option value="female">female</option>
-                                    <option value="N/A">will only complicate things</option>
-                                    <option value="" selected hidden>select an option</option>
-                                </select>
-                            </div>
-
-                            <div class="form-field">
-                                <label for="nick-name">nick-name (optional)</label>
-                                <input type="text" name="nick-name" id="">
-                            </div>
-
-                            <div class="form-field">
-                                <label for="DP">profile pic</label>
-                                <input type="file" name="DP" id="">
-                            </div>
-
-                            <div class="form-field">
-                                <label for="bio">bio:</label>
-                                <textarea name="bio" id=""></textarea>
-                            </div>
-
-                            <div class="form-field">
-                                <fieldset>
-                                    <legend>purpose for buying pc</legend>
-                                    <input type="checkbox" name="purpose" id="gaming">
-                                    <label for="gaming">gaming</label> <br/>
-                                    <input type="checkbox" name="purpose" id="office">
-                                    <label for="office">office work</label><br/>
-                                    <input type="checkbox" name="purpose" id="content">
-                                    <label for="content">content creation</label>
-                                </fieldset>
+                            <div class="form-row">
+                                <button class="submit" type="reset">reset</button>
+                                <button class="submit" type="submit">submit</button>
                             </div>
                         </form>
-
+                        
                     </div>
                 </section>
-
+                
             </main>
         </div>
     </div>

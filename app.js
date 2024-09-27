@@ -1,9 +1,11 @@
+// other scripts are in scripts folder
+
+
 window.onload = ()=>{
     // alert("welcome to the RT club");
     // console.log("letss gooooo")
 }
 
-// other scripts are in scripts folder
 
 function setCategory(selected = ''){
     localStorage.setItem("setCategory", selected);

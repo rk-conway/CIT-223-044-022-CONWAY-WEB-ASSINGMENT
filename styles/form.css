@@ -2,13 +2,13 @@
     width: 100%;
     min-height: 90vh;
     padding: var(--padding);
+    padding-bottom: 20vh;
     /* border: 1px solid red; */
 }
 
 form{
     width: clamp(300px,95%,800px);
     min-height: 50vh;
-    /* border: 2px solid var(--accent); */
     background-color: var(--primary-lighter);
     border-radius: 8px;
     padding: var(--padding);
@@ -17,15 +17,16 @@ form{
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-auto-rows: min-content;
     gap: var(--padding);
-    
-    /* display: flex;
-    flex-direction: column;
-    gap: 24px; */
+}
+
+.form-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-auto-rows: min-content;
+    gap: 8px;
 }
 
 .form-field{
-    /* max-width: 300px; */
-    /* border: 2px dashed orange; */
     background-color: rgb(54, 54, 54);
     padding: var(--padding);
     border-radius: 8px;
@@ -34,9 +35,9 @@ form{
     gap: 5px;
 }
 
-input,select,textarea{
+input,select,textarea,fieldset{
     background: none;
-    border: 1px solid var(--light);
+    border: 1px solid rgb(97, 97, 97);
     border-radius: 8px;
     padding: var(--padding);
 }
@@ -45,6 +46,26 @@ option{
     background: var(--primary);
     color: var(--light);
 }
-fieldset{
+
+
+.form-heading{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.75rem;
+    text-transform: capitalize;
+    color: var(--accent);
+}
+
+label{
+    text-transform: capitalize;
+    color: rgb(211, 211, 211);
+}
+
+button.submit{
+    width: 80%;
     padding: var(--padding);
+    background-color: var(--accent);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
