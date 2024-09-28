@@ -44,7 +44,7 @@ function fillCategories(callback){
         categoriesContainer.innerHTML+= newCategories
         
     }
-
+    
     callback();
 }
 
@@ -98,7 +98,7 @@ function fillProducts(){
                 <p><b>${prod.label}</b></p>
                 <p>price: ksh.${prod.price}</p>
                 </div>
-                <button class="buy">buy</button>
+                <button class="buy" onclick="buyProduct('${prod.label}')">buy</button>
                 </div>
                 `;
             })
@@ -173,4 +173,29 @@ function categoryHighlighter(target = ''){
 
 setTimeout(() => {
     localStorage.removeItem("setCategory");
+    // buyProduct();
 }, 100);
+
+
+
+function buyProduct(product){
+
+    if(localStorage.getItem("basket")){
+        let basket = JSON.parse(localStorage.getItem("basket"));
+        let targetProduct = allProducts.find((prod)=>prod.label = product);
+        basket.push(targetProduct);
+        localStorage.setItem('basket',JSON.stringify(basket));
+
+        alert(`${product} added to cart`);
+        console.log("basket has ",JSON.parse(localStorage.getItem("basket")));
+
+    }else{
+        let basket = [];
+        let targetProduct = allProducts.find((prod)=>prod.label = product);
+        basket.push(targetProduct);
+        localStorage.setItem("basket",JSON.stringify(basket));
+
+        alert(`${product} added to cart`);
+        console.log("basket has ",JSON.parse(localStorage.getItem("basket")));
+    }    
+}
