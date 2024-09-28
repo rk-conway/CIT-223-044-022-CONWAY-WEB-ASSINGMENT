@@ -30,3 +30,21 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
+.basket{
+    position: relative;
+}
+.message-bubble{
+    font-size: 0.7rem;
+    background-color: orangered;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
