@@ -188,6 +188,7 @@ function buyProduct(product){
 
         alert(`${product} added to cart`);
         console.log("basket has ",JSON.parse(localStorage.getItem("basket")));
+        checkItemsInBasket();
 
     }else{
         let basket = [];
@@ -197,5 +198,16 @@ function buyProduct(product){
 
         alert(`${product} added to cart`);
         console.log("basket has ",JSON.parse(localStorage.getItem("basket")));
+        checkItemsInBasket();
     }    
+}
+
+function checkItemsInBasket(){
+    let messageBubble = document.querySelector(".message-bubble");
+
+    if(localStorage.getItem("basket") && messageBubble){
+        let messages = JSON.parse(localStorage.getItem("basket")).length;
+
+        messageBubble.textContent = String(messages);
+    }
 }
