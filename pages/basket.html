@@ -22,8 +22,8 @@
                 <ul class="nav-links">
                     <a href="../index.html"><li class="link">home</li></a>
                     <a href="./custom.html"><li class="link">my build</li></a>
-                    <a href="./basket.html"><li class="link">basket</li></a>
                     <a href="./profile.html"><li class="link">profile</li></a>
+                    <a href="./products.html"><li class="link">shop</li></a>
                     <a href="./about.html"><li class="link">about</li></a>
                 </ul>
                 <p></p>
@@ -39,23 +39,18 @@
             
             <main>
                 <header class="page-title">
-                    <p>products</p>
+                    <p>basket</p>
                     <div class="menu screen-small"></div>
                 </header>
                 
                 <section  class="wrapper">
-                    <p class="heading-small">categories</p>
-                    <p style="padding: 0 12px;">Click on a category to filter!</p>
-
-                    <div class="categories">
-                        <div class="cat-card" onclick="fillProducts()">
-                            <div class="cat-image"></div>
-                            <p class="cat-label">All</p>
-                        </div>
+                    
+                    <div class="actions-bar">
+                        <button class="buy" onclick="clearBasket()">clear basket</button>
                     </div>
+                    
+                    <p class="heading-small">products you've bought</p>
 
-                        <p class="heading-small">products</p>
-                        <!-- <hr> -->
                     <div class="products">
                         <div class="prod-card">
                             <div class="prod-image"></div>
@@ -70,8 +65,8 @@
             </main>
         </div>
     </div>
-
-    <script src="../scripts/products.js"></script>
+    
+    <script src="../scripts/basket.js"></script>
     <script src="../scripts/menu.js"></script>
 </body>
 </html>

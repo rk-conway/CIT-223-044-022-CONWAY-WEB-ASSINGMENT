@@ -128,7 +128,7 @@ function fillterProducts(targetCat = ''){
                     <p><b>${prod.label}</b></p>
                     <p>price: ksh.${prod.price}</p>
                     </div>
-                    <button class="buy">buy</button>
+                    <button class="buy" onclick="buyProduct('${prod.label}')">buy</button>
                     </div>
                     `;
                 }
@@ -182,7 +182,7 @@ function buyProduct(product){
 
     if(localStorage.getItem("basket")){
         let basket = JSON.parse(localStorage.getItem("basket"));
-        let targetProduct = allProducts.find((prod)=>prod.label = product);
+        let targetProduct = allProducts.find((prod)=>prod.label === product);
         basket.push(targetProduct);
         localStorage.setItem('basket',JSON.stringify(basket));
 
@@ -191,7 +191,7 @@ function buyProduct(product){
 
     }else{
         let basket = [];
-        let targetProduct = allProducts.find((prod)=>prod.label = product);
+        let targetProduct = allProducts.find((prod)=>prod.label === product);
         basket.push(targetProduct);
         localStorage.setItem("basket",JSON.stringify(basket));
 
