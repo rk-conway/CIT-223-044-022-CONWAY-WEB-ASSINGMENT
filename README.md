@@ -8,3 +8,5 @@ With a wide collection of PC components to suit every budget and need.
 We also offer consultancy and repair services to customers, and a forum where one can create a profile and engage in discussions with other community members.  
 
 <img scr="./images/screenshots/home.jpeg" alt="howw home page looks"/>
+
+![Screenshot of landing page](./images/screenshots/home.jpeg)
